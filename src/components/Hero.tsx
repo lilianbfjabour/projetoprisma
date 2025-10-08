@@ -44,7 +44,8 @@ const Hero = () => {
                 Levar o PRISMA para minha escola
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              
+              https://wa.me/5511914527875?text=Quero%20levar%20o%20Projeto%20PRISMA%20para%20minha%20escola.%20Podemos%20marcar%20uma%20apresentacao%3F
+
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 hover:bg-muted">
                 <Download className="mr-2 h-5 w-5" />
                 Baixar apresentação
