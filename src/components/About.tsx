@@ -40,7 +40,7 @@ const About = () => {
               O PRISMA nasceu da necessidade de proteger nossas crianças e preparar escolas e famílias para os desafios do mundo digital.
             </p>
             <p>
-              Inspirado em programas de referência como <span className="font-semibold text-foreground">Internet Segura</span> e <span className="font-semibold text-foreground">Internet com Responsa</span> (NIC.br), o PRISMA é uma iniciativa que une tecnologia, ética e educação para desenvolver cidadãos digitais conscientes.
+              O PRISMA é uma iniciativa que une tecnologia, ética e educação para desenvolver cidadãos digitais conscientes.
             </p>
             <p>
               Por meio de atividades práticas e linguagem acessível, o programa ensina crianças, adolescentes e educadores a reconhecer riscos, exercitar empatia e usar a tecnologia de forma segura, responsável e positiva.

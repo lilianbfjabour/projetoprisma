@@ -69,8 +69,12 @@ const WhyPrisma = () => {
         </div>
 
         <div className="text-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
-          <Button size="lg" className="text-lg px-8 py-6 bg-gradient-prisma hover:opacity-90 transition-opacity shadow-prisma">
-            Agendar diagnóstico digital gratuito
+          <Button 
+            size="lg" 
+            className="text-lg px-8 py-6 bg-gradient-prisma hover:opacity-90 transition-opacity shadow-prisma"
+            onClick={() => window.open('https://wa.me/5511914527875?text=Gostaria%20de%20agendar%20um%20diagnóstico%20digital%20para%20minha%20escola', '_blank')}
+          >
+            Agendar diagnóstico digital
           </Button>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-education.jpg";
 
 const Hero = () => {
@@ -40,15 +40,13 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="text-lg px-8 py-6 bg-gradient-prisma hover:opacity-90 transition-opacity shadow-prisma">
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 bg-gradient-prisma hover:opacity-90 transition-opacity shadow-prisma"
+                onClick={() => window.open('https://wa.me/5511914527875?text=Quero%20levar%20o%20Projeto%20PRISMA%20para%20minha%20escola.%20Podemos%20marcar%20uma%20apresentacao%3F', '_blank')}
+              >
                 Levar o PRISMA para minha escola
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              https://wa.me/5511914527875?text=Quero%20levar%20o%20Projeto%20PRISMA%20para%20minha%20escola.%20Podemos%20marcar%20uma%20apresentacao%3F
-
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 hover:bg-muted">
-                <Download className="mr-2 h-5 w-5" />
-                Baixar apresentação
               </Button>
             </div>
           </div>
