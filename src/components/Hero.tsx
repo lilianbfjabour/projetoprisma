@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-education.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-hero">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-hero pt-20">
       {/* Prismatic background effect */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
@@ -22,14 +22,14 @@ const Hero = () => {
               </span>
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
               Construindo uma nova geração{" "}
               <span className="bg-gradient-prisma bg-clip-text text-transparent">
                 digital
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground font-light">
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-light">
               O Projeto PRISMA conecta escolas, professores e famílias em uma jornada de educação digital que une empatia, segurança e responsabilidade on-line.
             </p>
             
@@ -42,11 +42,19 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 size="lg" 
-                className="text-lg px-8 py-6 bg-gradient-prisma hover:opacity-90 transition-opacity shadow-prisma"
+                className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 bg-gradient-prisma hover:opacity-90 transition-opacity shadow-prisma"
                 onClick={() => window.open('https://wa.me/5511914527875?text=Quero%20levar%20o%20Projeto%20PRISMA%20para%20minha%20escola.%20Podemos%20marcar%20uma%20apresentacao%3F', '_blank')}
               >
                 Levar o PRISMA para minha escola
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2"
+                onClick={() => window.open('https://www.instagram.com/prismaeducacaodigital', '_blank')}
+              >
+                Saiba mais
               </Button>
             </div>
           </div>

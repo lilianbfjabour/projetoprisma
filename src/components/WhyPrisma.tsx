@@ -16,7 +16,7 @@ const statistics = [
   },
   {
     icon: Scale,
-    stat: "Lei 13.663/2018",
+    stat: "A legislação vigente",
     description: "exige que as escolas promovam ações de conscientização sobre o uso ético da Internet",
     color: "bg-secondary/10 text-secondary",
   },
@@ -33,13 +33,13 @@ const WhyPrisma = () => {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             O desafio é digital.{" "}
             <span className="bg-gradient-prisma bg-clip-text text-transparent">
               A solução é educacional.
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
             Hoje, a escola é o principal espaço de formação para o uso ético e seguro da tecnologia.
             Crianças e adolescentes estão conectados desde muito cedo — mas nem sempre estão preparados para lidar com os riscos do ambiente on-line.
           </p>
