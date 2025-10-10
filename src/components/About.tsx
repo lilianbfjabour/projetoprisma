@@ -1,4 +1,5 @@
 import { Shield, MessageCircle, Lightbulb, Heart } from "lucide-react";
+import prismaLogo from "@/assets/prisma-logo.png";
 
 const pillars = [
   {
@@ -32,8 +33,18 @@ const About = () => {
     <section className="py-24 bg-gradient-subtle" id="sobre">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in">
+          <div className="flex justify-center mb-8">
+            <img 
+              src={prismaLogo} 
+              alt="Projeto PRISMA Logo" 
+              className="h-20 w-auto"
+            />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            O que é o Projeto PRISMA
+            O que é o{" "}
+            <span className="bg-gradient-prisma bg-clip-text text-transparent">
+              Projeto PRISMA
+            </span>
           </h2>
           <div className="space-y-4 text-lg text-muted-foreground">
             <p>

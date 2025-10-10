@@ -1,4 +1,5 @@
-import { Instagram, Linkedin, Youtube } from "lucide-react";
+import { Instagram } from "lucide-react";
+import prismaLogo from "@/assets/prisma-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -6,12 +7,19 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-subtle border-t border-border">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold bg-gradient-prisma bg-clip-text text-transparent mb-4">
-              Projeto PRISMA
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src={prismaLogo} 
+                alt="Projeto PRISMA" 
+                className="h-12 w-auto"
+              />
+              <h3 className="text-2xl font-bold bg-gradient-prisma bg-clip-text text-transparent">
+                Projeto PRISMA
+              </h3>
+            </div>
             <p className="text-muted-foreground mb-6">
               Educação Digital e Cidadania On-line
             </p>
@@ -49,36 +57,17 @@ const Footer = () => {
 
           {/* Social */}
           <div>
-            <h4 className="font-semibold mb-4">Redes Sociais</h4>
-            <div className="flex gap-4">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-card rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-card"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-card rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-card"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-card rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-card"
-                aria-label="YouTube"
-              >
-                <Youtube className="h-5 w-5" />
-              </a>
-            </div>
+            <h4 className="font-semibold mb-4">Siga-nos</h4>
+            <a
+              href="https://www.instagram.com/prismaeducacaodigital"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 p-3 bg-gradient-prisma text-primary-foreground rounded-lg hover:opacity-90 transition-all duration-300 shadow-card"
+              aria-label="Instagram do Projeto PRISMA"
+            >
+              <Instagram className="h-5 w-5" />
+              <span className="font-medium">Instagram</span>
+            </a>
           </div>
         </div>
 
